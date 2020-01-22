@@ -12,6 +12,7 @@
 [core]
   pager = less -FRSX
 	editor = subl -n -w  >/dev/null 2>&1
+	excludesFile = /node-modules
 
 [alias]
   co = checkout
@@ -47,5 +48,5 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = zuberzuzanna@gmail.com
+	email = zuza@lewagon.org
 	name = Zuza Zuber
