@@ -25,7 +25,13 @@
   d = !git --no-pager diff
   dt  = difftool
   stat = !git --no-pager diff --stat
-
+  gcm = git checkout -m
+  gcom = git checkout master
+  gst = git status
+  gcm = git checkout message
+  gcom = git checkout master
+  ga = git add
+  
   # Clean merged branches
   sweep = !git branch --merged master | grep -v 'master$' | xargs git branch -d && git remote prune origin
 
