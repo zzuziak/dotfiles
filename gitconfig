@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = subl -n -w  >/dev/null 2>&1
+	editor = vim
 	excludesFile = /node-modules
 
 [alias]
@@ -58,3 +58,5 @@
 [user]
 	email = zuza@lewagon.org
 	name = Zuza Zuber
+[pull]
+	rebase = false

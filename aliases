@@ -5,3 +5,38 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+
+#export GOOGLE_APPLICATION_CREDENTIALS=/home/zuz/Downloads/DE-4-8f54e95cb609.json
+#export GOOGLE_APPLICATION_CREDENTIALS=/home/zuz/Documents/gcp/zuzproject.json
+#export GOOGLE_APPLICATION_CREDENTIALS=/home/zuz/Documents/gcp/berlin-492-servicekey.json
+#export GOOGLE_APPLICATION_CREDENTIALS=/home/zuz/Documents/gcp/avatars-sanitizer-key.json
+export GOOGLE_APPLICATION_CREDENTIALS=/home/zuz/Documents/gcp/data-bootcamp-lectures.json
+# utilities
+alias atom='flatpak run io.atom.Atom'
+alias jn='jupyter notebook'
+alias wds='webpack-dev-server'
+# gh
+alias openrepo='gh repo view -w'
+alias newrepo='gh repo create'
+# docker
+alias dk='docker ps -q | xargs docker kill'
+alias dkc='docker rm $(docker ps -aq)'
+alias dri='docker rmi $(docker images -q)'
+# functional
+alias pipup='pip install --upgrade pip'
+alias hi="echo $@"
+alias gpo='git push origin'
+alias gac='git add . && git commit -m'
+alias gob='git branch --sort=-committerdate'
+alias gobd='for branch in `git branch | grep -v HEAD`;do echo -e `git show --format="%ci %cr" $branch | head -n 1` \\t$branch; done | sort -r'
+
+
+# keyboards
+alias plk="setxkbmap pl"
+alias dek='setxkbmap de'
+
+# Rails
+alias dump_locally='DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rails db:reset && \
+  pg_restore -h localhost --clean --no-acl --no-owner -v -d wagon_platform_development \
+  $(ls tmp/light*dump | sort -rn | head -1 | cut -f2-)'
+

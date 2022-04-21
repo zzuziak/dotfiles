@@ -8,13 +8,24 @@
 		"A File Icon",
 		"AdvancedNewFile",
 		"All Autocomplete",
+		"Anaconda",
+		"AutoPEP8",
+		"AutoSetSyntax",
+		"ayu",
 		"Babel",
+		"BracketHighlighter",
+		"Color Highlight",
 		"Emmet",
 		"ERB Snippets",
 		"Git",
 		"GitGutter",
+		"Latest Migration",
 		"MagicPython",
 		"Package Control",
-		"SCSS"
+		"SCSS",
+		"Solarized Color Scheme",
+		"SublimeLinter",
+		"SublimeLinter-flake8",
+		"Theme - Soda"
 	]
 }
