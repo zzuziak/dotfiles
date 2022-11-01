@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = subl -n -w  >/dev/null 2>&1
+	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
 	excludesFile = /node-modules
 
 [alias]
@@ -56,7 +56,7 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = zzuziak@gmail.com
+	email = zuberzuzanna@gmail.com
 	name = Zuza Zuber
 [pull]
 	rebase = false
